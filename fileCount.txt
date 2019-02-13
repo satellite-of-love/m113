@@ -1,1 +1,9 @@
-count: 13
+count: totalFileCount() {
+        return new Promise((resolve, reject) => {
+            let count = 0;
+            this.streamFiles()
+                .on("data", f => count++)
+                .on("error", reject)
+                .on("end", _ => resolve(count));
+        });
+    }
