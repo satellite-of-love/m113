@@ -1,5 +1,5 @@
 # m113
-my new project
+yay metroplex
 
 Based on seed project `satellite-of-love:spring-rest-seed`
 
